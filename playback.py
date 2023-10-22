@@ -59,6 +59,7 @@ def on_keypress(e):
             play_sound(random.choice(hellos))
         else:
             play_sound(key_to_file[key])
+            print("playing")
 
 # Hook keypress event
 keyboard.on_press(on_keypress, suppress=True)
